@@ -1,0 +1,122 @@
+.guideButton {
+    font-size: 16px;
+    color: #1e90ff;
+    vertical-align: text-bottom;
+}
+
+.buttonIcon {
+    font-size: 16px;
+    vertical-align: text-bottom;
+}
+
+
+
+.chat {
+    height: 100%;
+
+    .contacts {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-bottom: 40px;
+        max-width: 365px;
+
+        .contact {
+            padding: 0 20px;
+            min-height: 66px;
+
+            .contact-container {
+                height: 66px;
+
+                .contact-name {
+                    font-weight: 700;
+                    color: #000000a6;
+                }
+
+                .contact-lastMessage {
+                    font-size: smaller;
+                    font-style: italic;
+                    color: #000000a6;
+                }
+
+                .contact-lastUpdatedTime {
+                    font-size: smaller;
+                    font-style: italic;
+                    color: #000000a6;
+                }
+            }
+        }
+
+        .contact.active {
+            background: #1890ff;
+
+            .contact-name {
+                color: white;
+            }
+
+            .contact-lastMessage {
+                color: white;
+            }
+
+            .contact-lastUpdatedTime {
+                color: white;
+            }
+        }
+
+        .contact:hover {
+            background: #dbe9f7;
+            cursor: pointer;
+        }
+
+        .contact.active:hover {
+            background: #1890ff;
+        }
+    }
+
+    .toolbar {
+        margin: 0;
+
+        div.ant-col:first-child {
+            line-height: 32px;
+        }
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.no-selected-contact {
+    padding: 25px;
+    border: none;
+    font-size: 14px;
+    color: #000000a6;
+}
+
+.conversation-view {
+    height: 100%;
+
+    .conversation-view-header {
+        background-color: white;
+        height: 62px;
+    }
+
+    .conversation-list {
+        height: calc(100% - 202px);
+
+        .no-message {
+            padding: 25px;
+            border: none;
+            font-size: 14px;
+            color: #000000a6;
+        }
+    }
+
+    .conversation-composer {
+        height: 140px;
+        background-color: #1890ff;
+        ;
+    }
+}

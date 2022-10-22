@@ -1,0 +1,18 @@
+.logo {
+    height: 51px;
+    margin: 20px;
+    background-image: url(../../img/logo.png);
+    background-size: cover;
+}
+
+.site-layout .site-layout-background {
+    background: #fff;
+}
+
+[data-theme="dark"] .site-layout .site-layout-background {
+    background: #141414;
+}
+
+.link {
+    text-decoration: none;
+}
